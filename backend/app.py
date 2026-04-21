@@ -1,11 +1,11 @@
 import streamlit as st
-from utils.extractor import extract_text
-from utils.skill_detector import detect_skills, SKILL_LIST
-from utils.scorer import calculate_ats_score
-from utils.suggestions import generate_suggestions
-from utils.jd_matcher import match_jd
+from backend.utils.extractor import extract_text
+from backend.utils.skill_detector import detect_skills, SKILL_LIST
+from backend.utils.scorer import calculate_ats_score
+from backend.utils.suggestions import generate_suggestions
+from backend.utils.jd_matcher import match_jd
 import plotly.graph_objects as go
-from utils.section_checker import check_sections
+from backend.utils.section_checker import check_sections
 
 def score_gauge(score, title):
     color = "#ef4444" if score < 40 else "#f59e0b" if score < 70 else "#10b981"
