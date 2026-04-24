@@ -1,42 +1,45 @@
-# 📄 AI Resume Analyzer
+# 📄 AI Resume Analyzer — ATS Score Checker Using NLP
 
-A Streamlit web app that analyzes resumes for ATS (Applicant Tracking System) compatibility.
+A full-stack web application that analyzes resumes for ATS compatibility
+using NLP-based keyword extraction, scoring algorithms, and rule-based suggestions.
 
-## 🚀 Features
-- Upload resume as PDF
-- Extracts text automatically
-- Detects technical skills
-- Calculates ATS score
-- Provides improvement suggestions
+## 🚀 Tech Stack
 
-## ⚙️ Setup
+| Layer      | Technology                        |
+|------------|-----------------------------------|
+| Frontend   | React (Vite) + Tailwind CSS       |
+| Backend    | FastAPI + Python                  |
+| NLP        | Keyword Extraction + pdfplumber   |
+| Charts     | Recharts                          |
+| Version Control | Git + GitHub               |
 
-Install dependencies:
+## ⚙️ Setup & Run
+
+### Backend
+cd backend
 pip install -r requirements.txt
+uvicorn main:app --reload
 
 
-## ▶️ Run
+### Frontend
+cd frontend
+npm install
+npm run dev
 
-streamlit run app.py
 
+## 🌐 URLs
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:8000
+- API Docs: http://localhost:8000/docs
 
-## 🛠️ Built With
-- Python
-- Streamlit
-- pdfplumber
-```
+## ✨ Features
+- Drag & drop PDF resume upload
+- 40+ technical skill detection
+- Overall ATS score with visual gauge
+- Job Description matching score
+- Resume section checker
+- Rule-based improvement suggestions
+- PDF report download
 
----
-
-Save it. Your final folder should now look like:
-```
-ai_resume_analyzer/
-├── app.py
-├── requirements.txt
-├── README.md
-└── utils/
-    ├── __init__.py
-    ├── extractor.py
-    ├── skill_detector.py
-    ├── scorer.py
-    └── suggestions.py
+## 👩‍💻 Academic Context
+BCA Final Semester Major Project
