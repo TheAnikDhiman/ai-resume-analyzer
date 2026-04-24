@@ -1,0 +1,153 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   AI RESUME ANALYZER — COMPLETE DEMO KIT
+   BCA Final Year Major Project Presentation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DEMO FILES INCLUDED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Resume 1 → Resume1_Arjun_Mehta_ML.pdf
+           Profile: ML Engineer, Python, TensorFlow, Docker, AWS
+           Expected ATS Score: ~70-80%  (GREEN gauge)
+
+Resume 2 → Resume2_Sneha_Kapoor_WebDev.pdf
+           Profile: Web Developer, React, JavaScript, Node.js
+           Expected ATS Score: ~40-55%  (AMBER gauge)
+
+Resume 3 → Resume3_Rahul_Verma_Fresher.pdf
+           Profile: Fresher, only Java, HTML, C
+           Expected ATS Score: ~10-20%  (RED gauge)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+JOB DESCRIPTION 1 — ML Engineer Role
+Use with: Resume 1 (Arjun) → Shows HIGH JD Match
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+We are hiring a Machine Learning Engineer at our AI Research Lab.
+
+Requirements:
+- Strong programming skills in Python and SQL
+- Hands-on experience with Machine Learning and Deep Learning frameworks
+- Proficiency in TensorFlow or PyTorch for model development
+- Experience with NLP, Computer Vision, or related AI domains
+- Knowledge of Docker for containerization and deployment
+- Cloud experience with AWS or GCP is highly preferred
+- Familiarity with Git for version control
+- Understanding of NumPy, Pandas, and Scikit-learn for data processing
+- Good problem-solving and analytical skills
+
+Freshers with strong project portfolios are welcome to apply.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+JOB DESCRIPTION 2 — Full Stack Developer Role
+Use with: Resume 2 (Sneha) → Shows MEDIUM JD Match
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+We are looking for a Full Stack Developer to join our product team.
+
+Requirements:
+- Strong proficiency in JavaScript, TypeScript, HTML, and CSS
+- Experience building frontend applications using React or Angular
+- Backend development experience with Node.js or Python
+- Database management using MongoDB or MySQL
+- REST API design and integration experience
+- Knowledge of Git for version control and collaboration
+- Familiarity with Docker and cloud deployment is a plus
+- AWS or Firebase experience preferred
+- Strong communication and teamwork skills
+
+0-2 years of experience. Fresher with good projects can apply.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+JOB DESCRIPTION 3 — DevOps / Backend Role
+Use with: Resume 3 (Rahul) → Shows LOW JD Match + heavy suggestions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+We are hiring a Junior Backend / DevOps Engineer for our infrastructure team.
+
+Requirements:
+- Proficiency in Python and SQL for backend development
+- Hands-on experience with Docker and Kubernetes for containerization
+- Cloud platform knowledge — AWS, Azure, or GCP
+- Experience with Linux systems administration
+- Knowledge of CI/CD pipelines and Git workflows
+- Backend framework experience — FastAPI, Django, or Flask
+- Understanding of Machine Learning deployment pipelines is a plus
+- Strong debugging and problem-solving skills
+
+This is a growth role for candidates who want to build scalable systems.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DEMO SCRIPT — WHAT TO DO IN ORDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SETUP (before demo starts):
+  Terminal 1 → cd backend → uvicorn main:app --reload
+  Terminal 2 → cd frontend → npm run dev
+  Browser    → open http://localhost:5173
+
+---
+
+DEMO ROUND 1 — "Strong Resume + Right Job"
+  Upload:  Resume1_Arjun_Mehta_ML.pdf
+  JD:      Paste JD 1 (ML Engineer)
+  Click:   Analyze Resume
+  Show:    High ATS score (green gauge), high JD match
+  Say:     "This candidate's resume is well-optimized.
+            Both gauges are green. Minimal suggestions."
+  Action:  Click Download Report → show the PDF downloads
+
+---
+
+DEMO ROUND 2 — "Medium Resume + Different Job"
+  Upload:  Resume2_Sneha_Kapoor_WebDev.pdf
+  JD:      Paste JD 2 (Full Stack Developer)
+  Click:   Analyze Resume
+  Show:    Medium ATS score (amber), skill chips visible
+  Say:     "Sneha has web skills but is missing some keywords
+            the JD specifically requires. Score is moderate."
+  Action:  Point out the Missing Skills chips in red
+
+---
+
+DEMO ROUND 3 — "Weak Resume — Maximum Suggestions"
+  Upload:  Resume3_Rahul_Verma_Fresher.pdf
+  JD:      Paste JD 3 (DevOps/Backend)
+  Click:   Analyze Resume
+  Show:    Low ATS score (red gauge), lots of missing skills
+  Say:     "Rahul is a fresher with limited technical skills.
+            The system clearly identifies what he needs to
+            add and gives specific suggestions to improve."
+  Action:  Scroll to Suggestions section — show all tips
+
+---
+
+KEY POINTS TO MENTION DURING DEMO:
+  ✓ Drag and drop upload (show it)
+  ✓ Works without JD too (just overall ATS)
+  ✓ 40+ skills in detection list
+  ✓ Section checker shows Education/Experience/Skills/Projects
+  ✓ Color-coded skill chips (green = found, red = missing)
+  ✓ PDF report downloads instantly
+  ✓ Real-time — no page reload needed
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+WHAT TO SAY IF TEACHER ASKS WHY 3 SCORES DIFFER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+"The system gives two scores:
+ 1. Overall ATS Score — based on all 40+ skills in our database
+ 2. JD Match Score — based only on skills the specific job requires
+
+ This is intentional. A resume strong in ML might score low
+ on an ATS designed for a web developer role, and vice versa.
+ Our system shows both so the user gets the complete picture."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -9,35 +9,30 @@ from reportlab.pdfbase.ttfonts import TTFont
 import io
 import os
 import platform
+import os
+import platform
 
-def register_fonts():
+def _register_fonts():
     if platform.system() == "Windows":
         font_dir = "C:/Windows/Fonts/"
-        fonts = {
-            "DV":   ("arial.ttf",  "Arial"),
-            "DV-B": ("arialbd.ttf","Arial Bold"),
-            "DV-I": ("ariali.ttf", "Arial Italic"),
+        font_map = {
+            "DV":   "arial.ttf",
+            "DV-B": "arialbd.ttf",
+            "DV-I": "ariali.ttf",
         }
     else:
         font_dir = "/usr/share/fonts/truetype/dejavu/"
-        fonts = {
-            "DV":   ("DejaVuSans.ttf",        "DejaVu Sans"),
-            "DV-B": ("DejaVuSans-Bold.ttf",    "DejaVu Sans Bold"),
-            "DV-I": ("DejaVuSans-Oblique.ttf", "DejaVu Sans Oblique"),
+        font_map = {
+            "DV":   "DejaVuSans.ttf",
+            "DV-B": "DejaVuSans-Bold.ttf",
+            "DV-I": "DejaVuSans-Oblique.ttf",
         }
-    for alias, (filename, _) in fonts.items():
+    for alias, filename in font_map.items():
         path = os.path.join(font_dir, filename)
         if os.path.exists(path):
             pdfmetrics.registerFont(TTFont(alias, path))
-        else:
-            # fallback to Helvetica if font not found
-            pass
 
-register_fonts()
-
-pdfmetrics.registerFont(TTFont("DV",   "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
-pdfmetrics.registerFont(TTFont("DV-B", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"))
-pdfmetrics.registerFont(TTFont("DV-I", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf"))
+_register_fonts()
 
 BLUE  = colors.HexColor("#1d4ed8")
 DARK  = colors.HexColor("#111827")
