@@ -18,6 +18,7 @@ using NLP-based keyword extraction, scoring algorithms, and rule-based suggestio
 ### Backend
 cd backend
 pip install -r requirements.txt
+pip install reportlab
 uvicorn main:app --reload
 
 
